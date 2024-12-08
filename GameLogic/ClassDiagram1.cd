@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Engine.Game">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAgAAAAAAAAAAAAgAgAAAAAAgAgAAIAAA=</HashCode>
+      <FileName>Game.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Dungeon" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Players" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Engine.Dungeon" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgQAAABAAAQAAAAAAEAEACBAAAAAAAAAgAAABAAIA=</HashCode>
+      <FileName>Dungeon.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Rooms" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Engine.Room">
+    <Position X="4.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ZARAAAACAAAAIAAAAAAAAAAAAAAAAgAAEAAAAACEEBA=</HashCode>
+      <FileName>Room.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="NorthWall" />
+      <Property Name="SouthWall" />
+      <Property Name="EastWall" />
+      <Property Name="WestWall" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Monsters" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Engine.Wall">
+    <Position X="7.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAgAAABAIAAAAAAAAIAAAA=</HashCode>
+      <FileName>Wall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Collections.Generic.List&lt;T&gt;" Collapsed="true">
+    <Position X="12.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Engine.Monster" Collapsed="true">
+    <Position X="1.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAgAAAAAAIACAQAAIAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Monster.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Engine.Player" Collapsed="true">
+    <Position X="6.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAQCAAAAAIAAAQAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Player.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Engine.IRoomObserver" Collapsed="true">
+    <Position X="12.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Room.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Engine.IWallObserver" Collapsed="true">
+    <Position X="12.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAgQAAAAAAAAAEAAEAAAAAAAA=</HashCode>
+      <FileName>Wall.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
