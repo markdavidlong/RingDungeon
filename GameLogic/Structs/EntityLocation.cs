@@ -38,12 +38,12 @@ namespace Engine.Structs
             }
             return Y switch
             {
-                -1 => Direction.North,
-                Constants.MaxRoomHeight + 1 => Direction.South,
+                Constants.RoomNorthWallOffset => Direction.North,
+                Constants.RoomSouthWallOffset => Direction.South,
                 _ => X switch
                 {
-                    -1 => Direction.West,
-                    Constants.MaxRoomWidth + 1 => Direction.East,
+                    Constants.RoomWestWallOffset => Direction.West,
+                    Constants.RoomEastWallOffset => Direction.East,
                     _ => Direction.Unspecified
                 },
             };
